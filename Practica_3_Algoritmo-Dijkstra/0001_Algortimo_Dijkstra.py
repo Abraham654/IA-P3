@@ -145,9 +145,8 @@ def visualize_graph(
 
     # Añadido un type: ignore para suprimir la advertencia de Pylance,
     # ya que sabemos que el tipo de node_color es una lista de str para networkx.
-    nx.draw_networkx_nodes(
-        G, pos, node_color=node_colors_list, node_size=3000, alpha=0.9
-    )  # type: ignore
+    
+
 
     # Dibujar aristas
     nx.draw_networkx_edges(G, pos, width=2, alpha=0.7, edge_color='gray')
